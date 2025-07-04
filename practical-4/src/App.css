@@ -1,38 +1,77 @@
-.App {
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  padding: 40px;
   text-align: center;
+  width: 90%;
+  max-width: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-size: 2.5rem;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.count {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: #007bff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-group button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button-group button:hover {
+  background: #0056b3;
+}
+
+.form {
+  margin: 30px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: border 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.output {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 20px;
 }
