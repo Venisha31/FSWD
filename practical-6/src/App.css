@@ -1,0 +1,153 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4ff;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 750px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #4b0082;
+  margin-bottom: 1rem;
+}
+
+.task-input,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1rem;
+  align-items: center;
+}
+
+.task-input input,
+.filters input,
+.filters select,
+.task-input button {
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-input input[type="text"] {
+  flex: 2;
+}
+
+.task-input input[type="date"],
+.filters input[type="date"] {
+  flex: 1;
+}
+
+.task-input button {
+  background: #6a0dad;
+  color: white;
+  border: none;
+  flex: 1;
+  min-width: 100px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.task-input button:hover {
+  background: #5a009d;
+}
+
+.filters input[type="text"] {
+  flex: 2;
+}
+
+.filters input[type="date"],
+.filters select {
+  flex: 1;
+}
+
+.status-filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.status-filters button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.status-filters button.active {
+  background: #6a0dad;
+  color: white;
+}
+
+.task-summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0 20px;
+  font-weight: 500;
+  color: #444;
+}
+
+.task-list .task {
+  background: #f6f6fe;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task.completed {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.task .task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task .due {
+  font-size: 13px;
+  color: #666;
+}
+
+.task select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #6a0dad;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: 0.2s;
+}
+
+.actions button:hover {
+  color: #3d0070;
+}
+
+.empty {
+  text-align: center;
+  color: #aaa;
+  margin-top: 1rem;
+}
